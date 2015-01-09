@@ -46,7 +46,7 @@ For now there is only one plugin [described here](http://maldr0id.blogspot.com/2
 Options for this plugin are very simple. Each key in the options dictionary is a unicode string that needs to be replaced. Value is (again) a dictionary with the following keys:
 
 * `value` - new value of the string, provided as a wide unicode string in ASCII caracters (see the included `config.py`)
-* `size` (optional) - size of the string *as will be written in the `AndroidManifest.xml`*. If not presenet, the actual length will be taken (rounded down).
+* `size` (optional) - size of the string *as will be written in the `AndroidManifest.xml`*. If not present, the actual length will be taken (rounded down).
 * `add_null_bytes` (optional) - wheter to add a null bytes and the end of the new string or not. Default: `True`
 * `check_resource_id` (optional) - only substitute when the string to be replaced has a resource map entry defined. Default: `True`
 
